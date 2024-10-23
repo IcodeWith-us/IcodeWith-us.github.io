@@ -1,4 +1,3 @@
-
 import Logo from "@/components/icons/Logo";
 import Search from "../icons/Search";
 import Moon from "../icons/Moon";
@@ -16,10 +15,9 @@ const Navbar = (props: Props) => {
   return (
     <nav className="w-screen bg-white dark:bg-black px-16 justify-between-flex h-20 drop-shadow-[0_2px_2px_rgba(0,0,0,0.05)] dark:drop-shadow-[0_1px_1px_rgba(50,50,50,0.5)] transition-colors duration-700 ease-in-out fixed z-50">
       <div className="centered-flex gap-5">
-        <Link href="/" className="link-text">
+        <Link href={`/${title}`} className="link-text">
           <Logo className="w-24" />
         </Link>
-        
         <ul className="hidden gap-7 lg:centered-flex ml-5">
           <li>
             <Link href="#" className="link-text hover:text-newGrey transition-colors duration-100">

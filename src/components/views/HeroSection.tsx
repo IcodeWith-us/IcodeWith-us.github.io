@@ -6,11 +6,11 @@ const HeroSection = (props: Props) => {
     <section className="mx-container">
 
       <div className="pt-44 space-y-5 mx-auto max-w-[56rem] 3xl:max-w-[72rem]">
-        <h3 className="text-3xl sm:text-4xl md:text-6xl lg:text-6xl xl:text-8xl 3xl:text-8xl text-center font-bold leading-[48px] sm:leading-[56px] md:leading-[64px] lg:leading-[72px] xl:leading-[98px] tracking-tight">
+        <h3 className=" text-lg mobile:text-xl mobileM:text-2xl mobileL:text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 3xl:text-8xl text-center font-bold leading-[36px] sm:leading-[40px] md:leading-[64px] lg:leading-[72px] xl:leading-[80px] tracking-tight">
           Premium stock designs and{" "}
           <span className="text-secondary">Ready-made assets.</span>
         </h3>
-        <p className="text-lg font-light text-lightGrey text-center 3xl:text-3xl">
+        <p className="text-sm mobile:text-sm mobileM:text-sm sm:text-lg md:text-lg lg:text-lg xl:text-2xl font-light text-lightGrey text-center 3xl:text-3xl">
             Save time and money by focusing on the key elements.
         </p>
       </div>
@@ -152,7 +152,7 @@ const HeroSection = (props: Props) => {
           ))}
       </div>
       <div className="mx-auto mt-12 flex justify-center">
-        <button className="bg-primary px-10 py-3 text-lg rounded-md text-white 3xl:px-16 3xl:py-5 3xl:text-2xl 3xl:rounded-lg transform transition-transform duration-300 hover:scale-105 hover:shadow-lg">
+        <button className="bg-primary px-14 py-2 sm:px-10 sm:py-3 text-lg rounded-md text-white 3xl:px-16 3xl:py-5 3xl:text-2xl 3xl:rounded-lg transform transition-transform duration-300 hover:scale-105 hover:shadow-lg">
           Show More
         </button>
       </div>

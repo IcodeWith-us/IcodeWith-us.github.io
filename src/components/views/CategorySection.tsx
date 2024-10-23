@@ -126,10 +126,10 @@ const CategorySection = (props: Props) => {
       {categories.map((category, index) => (
         <div key={index} className="mx-container">
           <div className="flex gap-5 justify-between sm:justify-between md:justify-between lg:justify-start xl:justify-start 2xl:flex 3xl:flex pl-0 pr-0 3xl:pl-36">
-            <h3 className="text-2xl font-medium tracking-tighter">
+            <h3 className="text-base md:text-2xl font-medium tracking-tighter">
               {category.title}
             </h3>
-            <button className="text-base tracking-tight px-5 py-1 bg-primary/10 text-primary rounded-md transform transition-transform duration-300 hover:scale-110 hover:shadow-lg hover:text-lightGrey">
+            <button className="text-sm md:text-base tracking-tight px-5 py-1 bg-primary/10 text-primary rounded-md transform transition-transform duration-300 hover:scale-110 hover:shadow-lg hover:text-lightGrey">
               View All
             </button>
           </div>
@@ -156,7 +156,7 @@ const CategorySection = (props: Props) => {
         <h6 className="text-2xl tracking-tighter text-center">
           Browse by category:
         </h6>
-        <div className="grid grid-cols-4 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-12 xl:grid-cols-12 items-center gap-14 mx-auto max-w-fit">
+        <div className="grid grid-cols-3 mobileL:grid-cols-4 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-12 xl:grid-cols-12 items-center gap-14 mx-auto max-w-fit">
           {categoryIcons.map((Icon, index) => (
             <Icon key={index} />
           ))}
