@@ -10,16 +10,16 @@
     text-wrap: balance;
   }
   .link-text {
-    @apply text-black dark:text-white text-lg font-normal transition-colors duration-700 ease-in-out;
+    @apply text-black dark:text-white text-sm font-normal transition-colors duration-700 ease-in-out;
   }
   .centered-flex {
     @apply flex items-center;
   }
   .justify-between-flex {
-    @apply flex items-center justify-between;
+    @apply flex items-center justify-between ;
   }
   .contact-btn {
-    @apply bg-buttonGrey dark:bg-[#292929] text-black dark:text-white px-7 py-3 text-lg font-normal rounded-md transition-colors duration-700 ease-in-out;
+    @apply bg-buttonGrey dark:bg-[#292929] text-black dark:text-white px-7 py-3 text-sm font-normal rounded-md transition-colors duration-700 ease-in-out;
   }
   .mx-container {
     @apply container mx-auto px-10

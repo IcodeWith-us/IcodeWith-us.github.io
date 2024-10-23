@@ -31,7 +31,7 @@ const ProjectDescription = (props: Props) => {
             </div>
             <div className="flex items-center gap-x-4">
               <p className="text-base font-light">Compatible With</p>
-              <div className="flex items-center gap-x-2">
+              <div className="flex items-center gap-x-2">  
                 <Sketch className="w-6 h-6" />
                 <Figma className="w-6 h-6" />
                 <AdobeXd className="w-6 h-6" />
@@ -70,10 +70,10 @@ const ProjectDescription = (props: Props) => {
               </li>
             ))}
           </ul>
-          <p className="mt-10 text-secondary text-3xl tracking-wider ">
+          <p className="mt-8 text-secondary text-3xl tracking-wider ">
             $40 <span className="text-[#757575] line-through">5,999</span>
           </p>
-          <button className="bg-primary py-3.5 text-lg rounded-md text-white mt-5 w-full">
+          <button className="bg-primary py-3.5 text-lg rounded-md text-white mt-2 w-full">
             Add to Cart
           </button>
           <button className="py-3.5 text-lg rounded-md mt-5 w-full border-[1.5px] border-black dark:border-white">

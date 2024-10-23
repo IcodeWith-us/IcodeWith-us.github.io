@@ -1,5 +1,5 @@
+
 import Image from "next/image";
-import React from "react";
 import Sketch from "../icons/Sketch";
 import Figma from "../icons/Figma";
 import Webflow from "../icons/Webflow";
@@ -13,6 +13,8 @@ import Slack from "../icons/Slack";
 import Zeplin from "../icons/Zeplin";
 import Dropbox from "../icons/Dropbox";
 import ProductCard from "../ProductCard";
+
+
 type Props = {};
 
 const categories = [
@@ -20,37 +22,25 @@ const categories = [
     title: "Mobile UI Kits",
     products: [
       {
-        image: "/mobile.png",
+        image: "/Mask2 group (1).png",
         title: "VIDA App - Remote access to your scooter",
         category: "APP DESIGN",
         price: 100,
       },
       {
-        image: "/mobile.png",
+        image: "/Go JEK.png",
         title: "VIDA App - Remote access to your scooter",
         category: "APP DESIGN",
         price: 100,
       },
       {
-        image: "/mobile.png",
+        image: "/Mask2 group (1).png",
         title: "VIDA App - Remote access to your scooter",
         category: "APP DESIGN",
         price: 100,
       },
       {
-        image: "/mobile.png",
-        title: "VIDA App - Remote access to your scooter",
-        category: "APP DESIGN",
-        price: 100,
-      },
-      {
-        image: "/mobile.png",
-        title: "VIDA App - Remote access to your scooter",
-        category: "APP DESIGN",
-        price: 100,
-      },
-      {
-        image: "/mobile.png",
+        image: "/Mask3 group (1).png",
         title: "VIDA App - Remote access to your scooter",
         category: "APP DESIGN",
         price: 100,
@@ -61,37 +51,25 @@ const categories = [
     title: "Icons",
     products: [
       {
-        image: "/icons.png",
+        image: "/APP VPN.png",
         title: "Outline - 81 mini Essential Icons outline",
         category: "ICON",
         price: 24.5,
       },
       {
-        image: "/icons.png",
+        image: "/Luefty.png",
         title: "Outline - 81 mini Essential Icons outline",
         category: "ICON",
         price: 100,
       },
       {
-        image: "/icons.png",
+        image: "/Three.png",
         title: "Outline - 81 mini Essential Icons outline",
         category: "ICON",
         price: 100,
       },
       {
-        image: "/icons.png",
-        title: "Outline - 81 mini Essential Icons outline",
-        category: "ICON",
-        price: 100,
-      },
-      {
-        image: "/icons.png",
-        title: "Outline - 81 mini Essential Icons outline",
-        category: "ICON",
-        price: 100,
-      },
-      {
-        image: "/icons.png",
+        image: "/web and tablet.png",
         title: "Outline - 81 mini Essential Icons outline",
         category: "ICON",
         price: 100,
@@ -102,31 +80,25 @@ const categories = [
     title: "UI Kits",
     products: [
       {
-        image: "/ui-kit.png",
+        image: "/Tab.png",
         title: "ottonova - Working on the health insurance",
         category: "WEB DESIGN",
         price: 34.5,
       },
       {
-        image: "/ui-kit.png",
+        image: "/tab2.png",
         title: "ottonova - Working on the health insurance",
         category: "WEB DESIGN",
         price: 34.5,
       },
       {
-        image: "/ui-kit.png",
+        image: "/tab3.png",
         title: "ottonova - Working on the health insurance",
         category: "WEB DESIGN",
         price: 34.5,
       },
       {
-        image: "/ui-kit.png",
-        title: "ottonova - Working on the health insurance",
-        category: "WEB DESIGN",
-        price: 34.5,
-      },
-      {
-        image: "/ui-kit.png",
+        image: "/Tab.png",
         title: "ottonova - Working on the health insurance",
         category: "WEB DESIGN",
         price: 34.5,
@@ -153,18 +125,18 @@ const CategorySection = (props: Props) => {
     <section className="mt-24 space-y-16">
       {categories.map((category, index) => (
         <div key={index} className="mx-container">
-          <div className="flex gap-5">
+          <div className="flex gap-5 justify-between sm:justify-between md:justify-between lg:justify-start xl:justify-start 2xl:flex 3xl:flex pl-0 pr-0 3xl:pl-36">
             <h3 className="text-2xl font-medium tracking-tighter">
               {category.title}
             </h3>
-            <button className="text-base tracking-tight px-5 py-1 bg-primary/10 text-primary rounded-md">
+            <button className="text-base tracking-tight px-5 py-1 bg-primary/10 text-primary rounded-md transform transition-transform duration-300 hover:scale-110 hover:shadow-lg hover:text-lightGrey">
               View All
             </button>
           </div>
-          <div className="flex gap-5 3xl:gap-10 mt-5 max-w-fit overflow-x-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 3xl:gap-10 mt-5 max-w-fit overflow-x-auto justify-center mx-auto">
             {category.products.map(
               ({ title, image, category, price }, index) => (
-                <ProductCard
+                <ProductCard 
                   key={index}
                   image={image}
                   alt={title}
@@ -184,7 +156,7 @@ const CategorySection = (props: Props) => {
         <h6 className="text-2xl tracking-tighter text-center">
           Browse by category:
         </h6>
-        <div className="flex items-center gap-14 mx-auto max-w-fit">
+        <div className="grid grid-cols-4 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-12 xl:grid-cols-12 items-center gap-14 mx-auto max-w-fit">
           {categoryIcons.map((Icon, index) => (
             <Icon key={index} />
           ))}

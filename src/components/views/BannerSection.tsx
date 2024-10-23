@@ -7,9 +7,9 @@ const BannerSection = (props: Props) => {
   return (
     <div className="bg-[#855AFF] mt-12 pb-20 pt-32 relative 3xl:pt-40">
       <Circle3 />
-
-      <div className="flex items-center justify-center gap-40">
-        <div className="space-y-7">
+      
+      <div className="flex flex-col sm:flex-col md:flex-col lg:flex-row items-center justify-center gap-40">
+        <div className="space-y-7 mx-8 sm:mx-8 md:mx-6 lg:mx-6 xl:mx-0 3xl:mx-0">
           <h4 className="max-w-96 font-semibold text-5xl text-white 3xl:text-7xl 3xl:max-w-[600px]">
             Join 10,000+ designers, founders and makers.
           </h4>
