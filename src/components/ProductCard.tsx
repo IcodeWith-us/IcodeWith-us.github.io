@@ -39,14 +39,14 @@ const ProductCard = ({
         <p className="text-lightGrey uppercase text-sm font-medium 3xl:text-base group-hover:hidden transition-opacity duration-1000">
           {category}
         </p>
-        <p className="text-2xl font-medium tracking-tight line-clamp-2 3xl:text-[28px]">
+        <p className="text-lg mobile:text-lg sm:text-lg md:text-xl font-medium tracking-tight line-clamp-2 3xl:text-[28px]">
           {title}
         </p>
       </div>
       <p className="text-secondary text-xl font-medium tracking-tight opacity-100 group-hover:opacity-0 transition-opacity duration-1000 3xl:text-2xl">
         $ {price}
       </p>
-      <div className="h-8 opacity-0 group-hover:opacity-100 transition-all duration-1000 group-hover:-translate-y-11 border-2 border-lightGrey flex items-center px-5 max-w-fit">
+      <div className="h-7 sm:h-8 opacity-0 group-hover:opacity-100 transition-all duration-1000 group-hover:-translate-y-11 border-2 border-lightGrey flex items-center px-4  sm:px-5 max-w-fit">
         <p className="text-secondary text-sm font-medium tracking-tight">
           $ {price}
         </p>
