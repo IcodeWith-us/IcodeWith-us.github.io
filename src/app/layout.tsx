@@ -6,7 +6,8 @@ import Circle1 from "@/components/icons/Circle1";
 import Circle2 from "@/components/icons/Circle2";
 import Footer from "@/components/layout/Footer";
 import Providers from "@/providers";
-const lexend = Lexend({ subsets: ["latin"] });
+const lexend = Lexend({ subsets: ["latin"]});
+
 
 export const metadata: Metadata = {
   title: "Create Next App",
