@@ -22,7 +22,7 @@
     @apply bg-buttonGrey dark:bg-[#292929] text-black dark:text-white px-7 py-3 text-sm font-normal rounded-md transition-colors duration-700 ease-in-out;
   }
   .mx-container {
-    @apply container mx-auto px-10
+    @apply container mx-auto px-6 sm:px-10 w-screen
   }
 }
 *{

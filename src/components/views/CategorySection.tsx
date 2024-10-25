@@ -122,10 +122,10 @@ const categoryIcons = [
 ];
 const CategorySection = (props: Props) => {
   return (
-    <section className="mt-24 space-y-16">
+    <section className="mt-24 mobile:space-y-6 sm:space-y-16">
       {categories.map((category, index) => (
         <div key={index} className="mx-container">
-          <div className="flex gap-5 justify-between sm:justify-between md:justify-between lg:justify-start xl:justify-start 2xl:flex 3xl:flex pl-0 pr-0 3xl:pl-36">
+          <div className="flex gap-5 justify-between sm:justify-between md:justify-between lg:justify-start xl:justify-start mobileL:pl-2 mobileL:pr-2 sm:pl-0 sm:pr-0 2xl:flex 3xl:flex pl-0 pr-0 3xl:pl-36">
             <h3 className="text-base md:text-2xl font-medium tracking-tighter">
               {category.title}
             </h3>
@@ -156,7 +156,7 @@ const CategorySection = (props: Props) => {
         <h6 className="text-2xl tracking-tighter text-center">
           Browse by category:
         </h6>
-        <div className="grid grid-cols-3 mobileL:grid-cols-4 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-12 xl:grid-cols-12 items-center gap-14 mx-auto max-w-fit">
+        <div className="grid grid-cols-3 mobileL:grid-cols-4 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-12 lg:mx-10 xl:grid-cols-12 xl:mx-auto items-center gap-14 mx-auto max-w-fit">
           {categoryIcons.map((Icon, index) => (
             <Icon key={index} />
           ))}

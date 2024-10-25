@@ -25,7 +25,7 @@ export default function RootLayout({
         <Providers>
           <>
             <Navbar />
-            <main className="h-screen overflow-scroll transition-colors duration-700 ease-in-out bg-white dark:bg-black relative">
+            <main className="h-screen overflow-scroll overflow-x-hidden transition-colors duration-700 ease-in-out bg-white dark:bg-black relative">
             <Circle1 className="absolute left-0 top-0" />
             <Circle2 className="absolute right-0 dark:hidden" />
               {children}

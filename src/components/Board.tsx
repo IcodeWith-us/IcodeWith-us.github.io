@@ -4,9 +4,9 @@ type Props = {};
 const Board = (props: Props) => {
   return (
     <div className="relative mx-4">
-      <div className="absolute w-1/2 bg-primary h-1 -rotate-[15deg] -translate-x-[3px] -translate-y-7 3xl:-translate-x-[4.5px] 3xl:-translate-y-[39px]" />
-      <div className=" absolute w-4 h-4 rounded-full bg-primary left-1/2 -translate-x-1/2 -top-14 mobileL:-top-16 3xl:w-5 3xl:h-5 3xl:-top-[85px]" />
-      <div className="absolute w-1/2 bg-primary h-1 rotate-[15deg] translate-x-[101.5%] -translate-y-7 3xl:-translate-y-[39px]" />
+      <div className="absolute w-1/2 bg-primary h-1 -rotate-[18deg] mobileM:-rotate-[16deg] -translate-x-[3px] -translate-y-6 mobileM:-translate-y-7 sm:mobileM:-translate-y-8 lg:-translate-y-[29px] xl:-translate-y-[31px] 3xl:-translate-x-[4.5px] 3xl:-translate-y-[42px]" />
+      <div className=" absolute w-4 h-4 rounded-full bg-primary left-1/2 -translate-x-1/2 -top-14 mobileL:-top-16 sm:-top-[70px] lg:-top-[66px] 3xl:w-6 3xl:h-6 3xl:-top-[95px]" />
+      <div className="absolute w-1/2 bg-primary h-1 rotate-[18deg] mobileM:rotate-[16deg] translate-x-[101.5%] -translate-y-6 mobileM:-translate-y-7 sm:mobileM:-translate-y-8 lg:-translate-y-[29px] xl:-translate-y-[31px] 3xl:-translate-y-[42px]" />
       <div className="bg-white dark:bg-black transition-colors duration-1000 px-10 pt-16 pb-12 border-8 border-primary space-y-7 3xl:px-16 3xl:pt-20 3xl:pb-16">
         <h4 className="font-bold text-4xl md:text-5xl tracking-tighter max-w-44 3xl:max-w-64 3xl:text-7xl">
           Design For Growth

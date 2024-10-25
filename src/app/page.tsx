@@ -4,7 +4,7 @@ import HeroSection from "@/components/views/HeroSection";
 
 export default function Home() {
   return (
-    <section className="h-screen overflow-scroll relative z-40">
+    <section className="h-screen overflow-scroll overflow-x-hidden relative z-40">
       <HeroSection />
       <BannerSection />
       <CategorySection />

@@ -33,7 +33,7 @@ const ProductCard = ({
         alt={alt}
         width={width}
         height={height}
-        className={`w-auto transition-transform duration-500 ease-in-out group-hover:scale-110 object-cover rounded-lg  ${imageClass}`}
+        className={`w-auto transition-transform duration-500 ease-in-out group-hover:scale-110 object-cover rounded-lg ${imageClass}`}
       />
       <div>
         <p className="text-lightGrey uppercase text-sm font-medium 3xl:text-base group-hover:hidden transition-opacity duration-1000">

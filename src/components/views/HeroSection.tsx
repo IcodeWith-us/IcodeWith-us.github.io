@@ -6,11 +6,11 @@ const HeroSection = (props: Props) => {
     <section className="mx-container">
 
       <div className="pt-44 space-y-5 mx-auto max-w-[56rem] 3xl:max-w-[72rem]">
-        <h3 className=" text-lg mobile:text-xl mobileM:text-2xl mobileL:text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 3xl:text-8xl text-center font-bold leading-[36px] sm:leading-[40px] md:leading-[64px] lg:leading-[72px] xl:leading-[80px] tracking-tight">
+        <h3 className=" text-lg mobile:text-2xl mobileM:text-[28px] mobileL:text-[32px] sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 3xl:text-8xl text-center font-bold leading-[36px] sm:leading-[40px] md:leading-[64px] lg:leading-[72px] xl:leading-[80px] tracking-tight">
           Premium stock designs and{" "}
           <span className="text-secondary">Ready-made assets.</span>
         </h3>
-        <p className="text-sm mobile:text-sm mobileM:text-sm sm:text-lg md:text-lg lg:text-lg xl:text-2xl font-light text-lightGrey text-center 3xl:text-3xl">
+        <p className=" pl-4 pr-4 sm:pl-0 sm:pr-0 text-sm mobileM:text-lg sm:text-lg md:text-lg lg:text-lg xl:text-2xl font-light text-lightGrey text-center 3xl:text-3xl">
             Save time and money by focusing on the key elements.
         </p>
       </div>
@@ -27,7 +27,7 @@ const HeroSection = (props: Props) => {
               category="Web Design"
               width={366}
               height={250}
-              imageClass="3xl:min-w-96"
+              imageClass=" mobile:w-96 3xl:min-w-96"
             />
           ))}
         {Array(1)
@@ -50,7 +50,7 @@ const HeroSection = (props: Props) => {
           .map((_, i) => (
             <ProductCard
               key={i}
-              image="/Tab3.png"
+              image="/Mbl2.png"
               alt="Product Image"
               title="ottonova - Working on the future of health insurance"
               price={100}
@@ -65,7 +65,7 @@ const HeroSection = (props: Props) => {
           .map((_, i) => (
             <ProductCard
               key={i}
-              image="/Tab2.png"
+              image="/Tab.png"
               alt="Product Image"
               title="ottonova - Working on the future of health insurance"
               price={100}
@@ -147,7 +147,7 @@ const HeroSection = (props: Props) => {
               category="Web Design"
               width={366}
               height={250}
-              imageClass="3xl:min-w-96"
+              imageClass=" 3xl:min-w-96"
             />
           ))}
       </div>
